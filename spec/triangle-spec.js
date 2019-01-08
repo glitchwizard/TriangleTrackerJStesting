@@ -14,3 +14,15 @@ describe('Triangle', function() {
         expect(notTriangle.checkType()).toEqual("not a triangle");
     });
 });
+
+describe('Triangle2', function () {
+    var reusableTriangle;
+    
+    beforeEach(function () {
+        reusableTriangle = new Triangle(5,5,5);
+    });
+
+    it('should show how beforeEach() works', function () {
+        console.log(reusableTriangle);
+    });
+});
